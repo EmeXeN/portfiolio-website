@@ -1,0 +1,66 @@
+.skills {
+    &__title {
+        margin-left: 15%;
+        min-width: 150px;
+        width: 18vw;
+        height: 100px;
+    }
+    &__tree {
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+    &__skill {
+        display: flex;
+        align-items: center;
+        margin-top: 2%;
+        img {
+            object-fit: contain;
+            width: 140px;
+            height: 140px;
+        }
+    }
+    &__progressbar-wrapper {
+        min-width: 220px;
+        width: 35vw;
+        height: 25px;
+        background: $darkgray;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    &__progressbar {
+        width: 50%;
+        height: 100%;
+        background: $pink;
+        border-radius: 10px;
+    }
+    .html {
+        width: 90%;
+    }
+    .css {
+        width: 80%;
+    }
+    .js {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .skills {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &__title {
+            margin-left: 0;
+        }
+        &__tree {
+            margin-left: 0;
+        }
+        &__skill {
+            margin-top: 15%;
+            flex-direction: column;
+            img {
+                padding-bottom: 5%;
+            }
+        }
+    }
+}

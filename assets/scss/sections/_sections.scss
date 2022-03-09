@@ -1,0 +1,34 @@
+@import '../other/fonts';
+@import '../other/variables';
+@import 'start';
+@import 'about-me';
+@import 'skills';
+@import 'works';
+
+.section {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: OxygenMono;
+    &__title {
+        font-family: Cuprum;
+        position: relative;
+        background: $pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: clamp(3rem, 4vw, 4.5rem);
+        color: $white;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 10px;
+            left: 10px;
+            border: 2px solid $darkgray;
+            z-index: -1;
+        }
+    }
+}

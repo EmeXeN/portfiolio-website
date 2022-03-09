@@ -1,0 +1,45 @@
+.start {
+    display: flex;
+    align-items: center;
+    font-family: OxygenMono;
+    &__title {
+        padding-left: 15%;
+        padding-bottom: 10%;
+        color: $white;
+        font-size: clamp(2rem, 4vw, 5vw);
+        &::first-letter {
+            color: $pink;
+        }
+        &-background {
+            background: $pink;
+            z-index: -1;
+        }
+        &-hover {
+            display: inline-block;
+            transition: .2s;
+            z-index: 101;
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.25) rotate(15deg);
+                color: $darkgray;
+            }
+        }
+    }
+    background: linear-gradient(150deg, $darkblue, $darkblue 83%, $pink 0%, $pink);
+    z-index: -1;
+}
+
+.title-inserted {
+    transition: 1s;
+    opacity: 0;
+}
+
+@media screen and (max-width: 660px) {
+    .start {
+        justify-content: center;
+        background: linear-gradient($darkblue, $darkblue 84%, $pink 32%, $pink);
+            &__title {
+            padding-left: 0;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/bundle.js" defer></script>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__icon">
+            <img src="./assets/img/icon.png" alt="Icon">
+        </div>
+        <ul class="header__buttons">
+            <li class="header__button"><a href="#about-me" >About me</a></li>
+            <li class="header__button"><a href="#skills">Skills</a></li>
+            <li class="header__button"><a href="#works">Works</a></li>
+        </ul>
+    </header>
+    <section class="start section">
+        <h1 class="start__title"></h1>
+    </section>
+    <section class="about-me section" id="about-me" data-inviewport="slide-in">
+        <div class="about-me__title section__title">About me</div>
+        <p class="about-me__description">I'm aspiring Junior Frontend Developer. I really enjoy learning <span>Javascript</span> and frameworks like React, but for now I focus on building my strong knowledge of Javascript programming. I also enjoy working on FiveM platform servers and doing things in <span>Lua</span>.</p>
+    </section>
+    <section class="skills section" id="skills" data-inviewport="scale-in">
+        <div class="skills__title section__title">Skills</div>
+        <div class="skills__tree">
+            <div class="skills__skill">
+                <img src="./assets/img/skills/html.png" alt="html icon">
+                <div class="skills__progressbar-wrapper">
+                    <div class="skills__progressbar html"></div>
+                </div>
+            </div>
+            <div class="skills__skill">
+                <img src="./assets/img/skills/css.png" alt="html icon">
+                <div class="skills__progressbar-wrapper">
+                    <div class="skills__progressbar css"></div>
+                </div>
+            </div>
+            <div class="skills__skill">
+                <img src="./assets/img/skills/js.png" alt="html icon">
+                <div class="skills__progressbar-wrapper">
+                    <div class="skills__progressbar js"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="works section" id="works" data-inviewport="fade-in">
+        <div class="works__title section__title">Works</div>
+        <div class="works__container">
+            <a href="https://github.com/EmeXeN/realtime-chatroom" target="_blank" class="works__work">
+                <img src="./assets/img/works/chatroom.png" alt="chatroom project">
+                <h1>Chatroom App</h1>
+            </a>
+            <a href="#https://github.com/EmeXeN/vanillajs-todoapp" target="_blank" class="works__work">
+                <img src="./assets/img/works/todoapp.png" alt="todoapp project">
+                <h1>Todo App</h1>
+            </a>
+            <a href="https://github.com/EmeXeN/weatherapp" target="_blank" class="works__work">
+                <img src="./assets/img/works/weatherapp.png" alt="chatroom project">
+                <h1>Weather App</h1>
+            </a>
+        </div>
+    </section>
+    <footer class="footer">
+        <a href="https://github.com/EmeXeN" target="_blank" class="footer__icon"><img src="./assets/img/github.png" alt="github icon"></a>
+    </footer>
+</body>
+</html>

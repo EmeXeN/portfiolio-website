@@ -1,0 +1,12 @@
+@import './other/other';
+@import './sections/sections';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: $darkblue;
+}

@@ -1,0 +1,33 @@
+.about-me {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &__title {
+        min-width: 200px;
+        width: 27vw;
+        min-height: 100px;
+        margin-left: 15%;
+    }
+    &__description {
+        padding-left: 15%;
+        width: 70%;
+        font-size: clamp(1.2rem, 2.2vw, 1.8rem);
+        color: white;
+        span {
+            background: $pink;
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .about-me {
+        align-items: center;
+        text-align: center;
+        &__description {
+            padding-left: 0;
+        }
+        &__title {
+            margin-left: 0;
+        }
+    }
+}
